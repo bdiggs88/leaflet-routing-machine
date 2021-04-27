@@ -49,7 +49,7 @@
 
 			var map = this._map;
 			if (this._router.requiresMoreDetail(this._selectedRoute,
-					map.getZoom(), map.getBounds())) {
+					map.getZoom(), map.getBounds()) && false) {
 				this.route({
 					callback: L.bind(function(err, routes) {
 						var i;
